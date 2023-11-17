@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="index.js"></script>
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div id="filter" class="filter invisible"></div>
+    <nav class="nav">
+      <img src="./images/logo.svg" alt="logo" />
+      <img id="hamburger-icon" class="pointer hamburger-icon" src="./images/icon-menu.svg" alt="menu" />
+      <div id="hamburger-menu" class="hamburger-menu menu invisible">
+        <div class="submenu-wrapper">
+          <div class="interact flex-flow submenu-header"><span>Features</span><img src="./images/icon-arrow-down.svg" alt="expand" /></div>
+          <ul class="menu submenu collapse">
+            <li class="interact flex-flow"><img src="./images/icon-todo.svg" alt="todo" /><span>Todo List</span></li>
+            <li class="interact flex-flow"><img src="./images/icon-calendar.svg" alt="todo" /><span>Calendar</span></li>
+            <li class="interact flex-flow"><img src="./images/icon-reminders.svg" alt="todo" /><span>Reminders</span></li>
+            <li class="interact flex-flow"><img src="./images/icon-planning.svg" alt="todo" /><span>Planning</span></li>
+          </ul>
+        </div>
+        <div class="submenu-wrapper">
+          <div class="interact flex-flow submenu-header"><span>Company</span><img src="./images/icon-arrow-down.svg" alt="expand" /></div>
+          <ul class="menu submenu collapse">
+            <li class="interact">History</li>
+            <li class="interact">Our Team</li>
+            <li class="interact">Blog</li>
+          </ul>
+        </div>
+        <div class="interact">Careers</div>
+        <div class="interact">About</div>
+        <div class="account">
+          <div class="interact">Login</div>
+          <div class="interact register">Register</div>
+        </div>
+      </div>
+    </nav>
+    <div class="content-client-wrapper">
+      <div class="hero-wrapper">
+        <picture class="hero">
+          <source media="(max-width: 799px)" srcset="./images/image-hero-mobile.png" />
+          <source media="(min-width: 800px)" srcset="./images/image-hero-desktop.png" />
+          <img src="./images/image-hero-mobile.png" alt="hero" />
+        </picture>
+      </div>
+      <div class="content-wrapper">
+        <div class="content">
+          <p class="title">Make remote work</p>
+          <p class="description">
+            Get your team in sync, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.
+          </p>
+          <div class="pointer learn-more">Learn more</div>
+        </div>
+        <div class="clients">
+          <div class="client-wrapper"><img src="./images/client-databiz.svg" alt="databiz" /></div>
+          <div class="client-wrapper"><img src="./images/client-audiophile.svg" alt="audiophile" /></div>
+          <div class="client-wrapper"><img src="./images/client-meet.svg" alt="meet" /></div>
+          <div class="client-wrapper"><img src="./images/client-maker.svg" alt="maker" /></div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
