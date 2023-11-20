@@ -15,58 +15,48 @@
   <link rel="stylesheet" href="./styles.css">
   <script defer src="index.js"></script>
 
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
+  <title>Intro section with dropdown navigation</title>
 </head>
 
 <body>
-  <main>
-    <div id="filter" class="filter invisible"></div>
-    <nav class="nav">
-      <img src="./images/logo.svg" alt="logo" />
-      <img id="hamburger-icon" class="pointer hamburger-icon" src="./images/icon-menu.svg" alt="menu" />
-      <div id="hamburger-menu" class="hamburger-menu menu invisible">
-        <div class="submenu-wrapper">
-          <div class="interact flex-flow submenu-header"><span>Features</span><img src="./images/icon-arrow-down.svg" alt="expand" /></div>
-          <ul class="menu submenu collapse">
-            <li class="interact flex-flow"><img src="./images/icon-todo.svg" alt="todo" /><span>Todo List</span></li>
-            <li class="interact flex-flow"><img src="./images/icon-calendar.svg" alt="todo" /><span>Calendar</span></li>
-            <li class="interact flex-flow"><img src="./images/icon-reminders.svg" alt="todo" /><span>Reminders</span></li>
-            <li class="interact flex-flow"><img src="./images/icon-planning.svg" alt="todo" /><span>Planning</span></li>
-          </ul>
-        </div>
-        <div class="submenu-wrapper">
-          <div class="interact flex-flow submenu-header"><span>Company</span><img src="./images/icon-arrow-down.svg" alt="expand" /></div>
-          <ul class="menu submenu collapse">
-            <li class="interact">History</li>
-            <li class="interact">Our Team</li>
-            <li class="interact">Blog</li>
-          </ul>
-        </div>
-        <div class="interact">Careers</div>
-        <div class="interact">About</div>
-        <div class="account">
-          <div class="interact">Login</div>
-          <div class="interact register">Register</div>
-        </div>
+  <div id="filter" class="filter invisible"></div>
+  <nav class="nav">
+    <img src="./images/logo.svg" alt="logo" />
+    <img id="hamburger-icon" class="pointer hamburger-icon" src="./images/icon-menu.svg" alt="menu" />
+    <div id="hamburger-menu" class="hamburger-menu menu invisible">
+      <div class="submenu-wrapper">
+        <div class="interact flex-flow submenu-header"><span>Features</span><img src="./images/icon-arrow-down.svg"
+            alt="expand" /></div>
+        <ul class="menu submenu collapse">
+          <li class="interact flex-flow"><img src="./images/icon-todo.svg" alt="todo" /><span>Todo List</span></li>
+          <li class="interact flex-flow"><img src="./images/icon-calendar.svg" alt="todo" /><span>Calendar</span></li>
+          <li class="interact flex-flow"><img src="./images/icon-reminders.svg" alt="todo" /><span>Reminders</span></li>
+          <li class="interact flex-flow"><img src="./images/icon-planning.svg" alt="todo" /><span>Planning</span></li>
+        </ul>
       </div>
-    </nav>
+      <div class="submenu-wrapper">
+        <div class="interact flex-flow submenu-header"><span>Company</span><img src="./images/icon-arrow-down.svg"
+            alt="expand" /></div>
+        <ul class="menu submenu collapse">
+          <li class="interact">History</li>
+          <li class="interact">Our Team</li>
+          <li class="interact">Blog</li>
+        </ul>
+      </div>
+      <div class="interact">Careers</div>
+      <div class="interact">About</div>
+      <div class="account">
+        <div class="interact">Login</div>
+        <div class="interact register">Register</div>
+      </div>
+    </div>
+  </nav>
+  <main>
     <div class="content-client-wrapper">
       <div class="hero-wrapper">
         <picture class="hero">
-          <source media="(max-width: 799px)" srcset="./images/image-hero-mobile.png" />
-          <source media="(min-width: 800px)" srcset="./images/image-hero-desktop.png" />
+          <source media="(max-width: 1279px)" srcset="./images/image-hero-mobile.png" />
+          <source media="(min-width: 1280px)" srcset="./images/image-hero-desktop.png" />
           <img src="./images/image-hero-mobile.png" alt="hero" />
         </picture>
       </div>

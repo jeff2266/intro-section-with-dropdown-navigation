@@ -28,13 +28,15 @@ function hamburgerClickHandler() {
 }
 
 function submenuClickHandler() {
-    const arrow = this.querySelector("img")
-    const submenu = this.parentElement.querySelector(".submenu")
-    if (submenu.classList.contains("collapse")) {
-        openSubmenu(arrow, submenu)
-    } else {
-        closeSubmenu(arrow, submenu)
-    }
+    submenuHeaders.forEach(el => {
+        const arrow = el.querySelector("img")
+        const submenu = el.parentElement.querySelector(".submenu")
+        if (submenu.classList.contains("collapse") && this.parentElement.contains(el)) {
+            openSubmenu(arrow, submenu)
+        } else {
+            closeSubmenu(arrow, submenu)
+        }
+    })
 }
 
 hamburgerIcon.onclick = hamburgerClickHandler
